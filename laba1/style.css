@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'firstFont';
+  src: url('/fonts/beer-money12.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'secondFont';
+  src: url('/fonts/d9464-arkhip_font.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'thirdFont';
+  src: url('/fonts/impact2.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'myFont';
+  src: url('/fonts/Myfont-Regular.ttf') format('truetype');
+}
+body {
+  display: flex; 
+  justify-content: center;
+  background-color: rgb(239, 245, 245);
+}
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.all-container {
+  width: 1440px;
+}
+ul{
+  list-style-type: none;
+}
+li a{
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+#first-film h2{
+  font-family: 'firstFont', sans-serif;
+}
+#first-film .film-content p{
+  text-align: center;
+}
+#second-film h2{
+  font-family: 'secondFont', sans-serif;
+}
+#second-film .film-content p{
+  text-align: end;
+}
+#third-film h2{
+  font-family: 'thirdFont', sans-serif;
+}
+#third-film .film-content p{
+  text-align: start;
+}
+table td{
+  padding-right: 10px;
+}
+p{
+  font-family: 'myFont';
+}
