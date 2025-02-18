@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flex</title>
+</head>
+<body>
+    <header>
+        <h1>Flex-свойства</h1>
+        </header>
+    <main>
+        <h2>Шпаргалка по FlexBox</h2>
+        <div class = 'property flex' id ='first-property'>
+            <h3>display</h3>
+            <div class = 'buttons'>
+                <button id = 'flex-button' class = 'active'>flex</button>
+                <button id = 'inline-flex-button'>inline-flex</button>
+            </div>
+            <div class = 'picture'>
+                <p>Здесь текст</p>
+                <div class = 'squares'>
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+            </div>
+            <div class = 'description'>
+                <p class = 'first-descrip'>Многоцелевое свойство, которое определяет, как элемент должен быть показан в документе.</p>
+                <p class = 'second-descrip'>всем элементам.</p>
+                <div class = 'property-description'>
+                    <h5>flex</h5>
+                    <p>
+                        Элемент ведёт себя как блочный и выкладывает содержимое согласно флекс-модели.</p>
+                </div>
+                <div class = 'property-description'>
+                    <h5>inline-flex</h5>
+                    <p>
+                        Элемент ведёт себя как строчный и выкладывает содержимое согласно флекс-модели.</p>
+                </div>
+            </div>
+        </div>
+        <div class="property" id="second-property">
+            <h3>flex-flow</h3>
+            <div class="buttons">
+                <button id="row-nowrap-button" class="active">row nowrap</button>
+                <button id="column-reverse-button">column-reverse</button>
+                <button id="column-wrap-button">column wrap</button>
+                <button id="wrap-reverse-button">row-reverse wrap-reverse</button>
+            </div>
+            <div class="picture">
+                <div class="squares">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+            </div>
+            <div class="description">
+                <p class="first-descrip">Свойство flex-flow является сокращённым свойством для отдельных свойств flex-direction и flex-wrap.</p>
+                <p class="second-descrip">flex контейнерам.</p>
+                <div class="property-description">
+                    <h5>row nowrap</h5>
+                    <p>
+                        элементы будут располагаться в одну строку, и не будут переноситься на следующую строку даже при недостатке места.</p>
+                </div>
+                <div class="property-description">
+                    <h5>column-reverse</h5>
+                    <p>
+                        элементы будут располагаться в колонку в обратном порядке (снизу вверх) без переноса на новую строку.</p>
+                </div>
+                <div class="property-description">
+                    <h5>column-wrap</h5>
+                    <p>
+                        элементы будут располагаться в колонку и переноситься на новую колонку, если в текущей колонке недостаточно места.</p>
+                </div>
+                <div class="property-description">
+                    <h5>row-reverse wrap-reverse</h5>
+                    <p>
+                        элементы будут располагаться в строку в обратном порядке (справа налево) и переноситься на новую строку, но в обратном порядке (снизу вверх).</p>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="property" id="third-property">
+            <h3>flex-wrap</h3>
+            <div class="buttons">
+                <button id="nowrap-button" class="active">nowrap</button>
+                <button id="wrap-button">wrap</button>
+                
+            </div>
+            <div class="picture">
+                <div class="squares">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                  
+                </div>
+            </div>
+            <div class="description">
+                <p class="first-descrip">Свойство flex-wrap указывает, следует ли флексам располагаться в одну строку или можно занять несколько строк. Если перенос строк допускается, то свойство также позволяет контролировать направление, в котором выкладываются строки.</p>
+                <p class="second-descrip">flex контейнерам.</p>
+                <div class="property-description">
+                    <h5>nowrap</h5>
+                    <p>Флексы выстраиваются в одну линию.</p>
+                </div>
+                <div class="property-description">
+                    <h5>wrap</h5>
+                    <p>Флексы выстраиваются в несколько строк, их направление задаётся свойством flex-direction.</p>
+                </div>
+               
+            </div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
