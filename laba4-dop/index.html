@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>grid</title>
+</head>
+    <body>
+        <header>
+            <h1>Grid-свойства</h1>
+           
+        </header>
+        <main>
+            <h2>Шпаргалка по Grid</h2>
+            <div class = 'property start' id ='first-property'>
+                <h3>justify-items</h3>
+                <div class = 'buttons'>
+                    <button id = 'ji-start-button' class = 'active'>start</button>
+                    <button id = 'ji-end-button'>end</button>
+                    <button id = 'ji-center-button'>center</button>
+                    <button id = 'ji-stretch-button'>stretch</button>
+                </div>
+                <div class = 'picture'>
+                    <div class = 'squares'>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+                </div>
+                <div class = 'description'>
+                    <p class = 'first-descrip'>Выравнивает содержимое вдоль оси строки (в отличии от align-items который выравнивает элементы вдоль оси столбца). Это значение применяется ко всем элементам сетки внутри контейнера.</p>
+                    <p class = 'second-descrip'> нет.</p>
+                    <p class = 'third-descrip'>всем элементам.</p>
+                    <p class = 'fourth-descrip'> legacy.</p>
+                    <div class = 'property-description'>
+                        <h5>start</h5>
+                        <p>
+                            выравнивает содержимое по левой стороне области.</p>
+                    </div>
+                    <div class = 'property-description'>
+                        <h5>end</h5>
+                        <p>
+                            выравнивает содержимое по правой стороне области.</p>
+                    </div>
+                    <div class = 'property-description'>
+                        <h5>center</h5>
+                        <p>
+                            выравнивает содержимое по центру области.</p>
+                    </div>
+                    <div class = 'property-description'>
+                        <h5>stretch</h5>
+                        <p>
+                            заполняет всю ширину области (по умолчанию).</p>
+                    </div>
+                </div>
+            </div>
+            <div class = 'property' id ='second-property'>
+                <h3>align-items</h3>
+                <div class = 'buttons'>
+                    <button id = 'ai-start-button' class = 'active'>start</button>
+                    <button id = 'ai-end-button'>end</button>
+                    <button id = 'ai-center-button'>center</button>
+                    <button id = 'ai-stretch-button'>stretch</button>
+                </div>
+                <div class = 'picture'>
+                    <div class = 'squares'>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+                </div>
+                <div class = 'description'>
+                    <p class = 'first-descrip'>Выравнивает содержимое вдоль оси столбца (в отличии от justify-items который выравнивает элементы вдоль оси строки). Это значение применяется ко всем элементам сетки внутри контейнера.</p>
+                    <p class = 'second-descrip'> нет.</p>
+                    <p class = 'third-descrip'>всем элементам.</p>
+                    <p class = 'fourth-descrip'> normal.</p>
+                    <div class = 'property-description'>
+                        <h5>start</h5>
+                        <p>
+                            выравнивание элементов по верхней части области.</p>
+                    </div>
+                    <div class = 'property-description'>
+                        <h5>end</h5>
+                        <p>
+                            выравнивание элементов по нижней части области.</p>
+                    </div>
+                    <div class = 'property-description'>
+                        <h5>center</h5>
+                        <p>
+                            выравнивание элементов по центру области.</p>
+                    </div>
+                    <div class = 'property-description'>
+                        <h5>stretch</h5>
+                        <p>
+                            заполняет всю высоту области (по умолчанию).</p>
+                    </div>
+                </div>
+            </div>
+            <div class = 'property' id ='third-property'>
+                <h3>grid-auto-flow</h3>
+                <div class = 'buttons'>
+                    <button id = 'gaf-row-button' class = 'active'>row</button>
+                    <button id = 'gaf-column-button'>column</button>
+                    <button id = 'gaf-dense-button'>dense</button>
+                </div>
+                <div class = 'picture'>
+                    <div class = 'squares'>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+                </div>
+                <div class = 'description'>
+                    <p class = 'first-descrip'>
+                        Свойство grid-auto-flow управляет тем, как работает алгоритм автоматического размещения, точно указывая, как элементы попадают в сетку.</p>
+                        <p class = 'second-descrip'> нет.</p>
+                        <p class = 'third-descrip'>grid контейнерам.</p>
+                        <p class = 'fourth-descrip'>  row.</p>
+                        <div class = 'property-description'>
+                            <h5>row</h5>
+                            <p>Алгоритм размещает элементы, заполняя каждую строку поочередно, добавляя новые строки по мере необходимости.</p>
+                        </div>
+                        <div class = 'property-description'>
+                            <h5>column</h5>
+                            <p>Алгоритм помещает элементы, заполняя каждый столбец поочередно, добавляя по мере необходимости новые столбцы.</p>
+                        </div>
+                        <div class = 'property-description'>
+                            <h5>dense</h5>
+                            <p>алгоритм использует «плотный» алгоритм упаковки, который пытается заполнить дыры в сетке, если позже появятся более мелкие элементы. Это может привести к тому, что элементы появятся не по порядку, но при этом заполнят отверстия, оставленные более крупными элементами.</p>
+                        </div>
+                    </div>
+            </div>
+        </main>
+    </body>
+    <script src = 'script.js'></script>
+</html>
