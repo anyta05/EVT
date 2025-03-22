@@ -3,9 +3,9 @@
 </div>
 <div id="badges">
   <a href="https://www.linkedin.com/in/%D0%B0%D0%BD%D0%BD%D0%B0-%D0%B1%D0%BE%D1%80%D0%B5%D0%B9%D0%BA%D0%BE-32326233a">
-  
   <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
-  
+   </a>
+   <a href="https://www.instagram.com/__a_n_y_t_a_/?next=%2F">
    <img src="https://img.shields.io/badge/Instagram-pink?style=for-the-badge&logo=instagram&logoColor=white"/>
-   
+   </a>
 </div>
