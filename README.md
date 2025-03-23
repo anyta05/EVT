@@ -10,7 +10,7 @@
    </a>
 </div>
 
-  ### :woman_technologist: О себе :
+  ## :woman_technologist: О себе :
 - :school: БГУИР 3 курс
 - :zap: In my free time, I make Figma.
 - :white_check_mark: https://anyta05.github.io/EVT
@@ -18,7 +18,7 @@
  ## Контактная информация:
 - **linkedIn:** *Анна Борейко*
 - **email:** *a.boreiko2005@gmail.com*
-  ### :woman_technologist: Навыки:
+  ## :woman_technologist: Навыки:
 - JS
 - HTML
 - CSS
