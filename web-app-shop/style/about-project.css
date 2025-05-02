@@ -1,0 +1,126 @@
+.news-item-about-pr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 20px;
+}
+
+.about-prj-text-con-1 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 8px;
+    padding: 50px;
+}
+
+.about-prj-text-con-2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: lighter;
+    letter-spacing: 8px;
+    font-style: italic;
+    padding: 15px;
+}
+
+.about-prj-text-con-3 {
+    padding: 50px;
+    text-align: center;
+}
+
+.about-prj-text-con-3 span {
+    color: #FBD784;
+    font-size: 36px;
+    letter-spacing: 6px;
+    border-bottom: 2px solid #FBD784;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.about-prj-text-con-4 {
+    color: #FBD784;
+    font-size: 36px;
+    font-weight: lighter;
+    letter-spacing: 6px;
+}
+
+.about-prj-text-con-5 {
+    padding: 50px;
+    text-align: center;
+}
+
+.about-prj-text-con-5 span {
+    color: #FBD784;
+    font-size: 40px;
+    letter-spacing: 6px;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.about-prj-text-con-6 {
+    font-size: 26px;
+    letter-spacing: 6px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+
+    .news-item-about-pr {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .about-prj-text-con-1 {
+        font-size: 26px;
+        padding: 30px 10px;
+        letter-spacing: 4px;
+    }
+
+    .about-prj-text-con-2 {
+        font-size: 20px;
+        padding: 10px;
+        letter-spacing: 4px;
+    }
+
+    .about-prj-text-con-3 {
+        padding: 30px 10px;
+    }
+
+    .about-prj-text-con-3 span {
+        font-size: 22px;
+        letter-spacing: 3px;
+        padding-bottom: 6px;
+    }
+
+    .about-prj-text-con-4 {
+        font-size: 20px;
+        text-align: left;
+        letter-spacing: 4px;
+    }
+
+    .about-prj-text-con-5 {
+        padding: 50px;
+        text-align: center;
+    }
+
+    .about-prj-text-con-5 span {
+        font-size: 22px;
+        letter-spacing: 4px;
+        padding-bottom: 5px;
+    }
+
+    .about-prj-text-con-6 {
+        font-size: 16px;
+        letter-spacing: 4px;
+    }
+}
+
+
+
+.light-theme span,
+.light-theme .about-prj-text-con-3,
+.light-theme .about-prj-text-con-4 {
+    color: #000;
+}

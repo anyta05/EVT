@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/products.css">
+    <title>Farm Craft Market</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="./index.html">ГЛАВНАЯ</a></li>
+                <li><a href="#">ПРОДУКТЫ</a></li>
+            </ul>
+            <div class="burger-menu" onclick="toggleMenu()">☰</div>
+        </nav>
+        
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="slide"><img src="./images/image-header.png" alt="Фон 1"></div>
+                <div class="slide"><img src="./images/img-2.jpg" alt="Фон 2"></div>
+                <div class="slide"><img src="./images/img-3.jpg" alt="Фон 3"></div>
+            </div>
+            <div class="overlay">
+                <h1 class="logo-text">FARM CRAFT<br>MARKET</h1>
+                <p class="description-text-logo">ДЕРЕВЕНСКИЕ НАТУРАЛЬНЫЕ ПРОДУКТЫ</p>
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </header>
+    <section class="con-product">
+        <div class="container">
+          <p class="text-product-mn">ОБЩИЙ КАТАЛОГ КРАФТОВЫХ,<br> ОРГАНИЧЕСКИХ И ДЕРЕВЕНСКИХ <br>НАТУРАЛЬНЫХ ПРОДУКТОВ</p>
+          <div class="catalog" id="catalog"></div>
+          <a class="a-product" href="./basket.html">Перейти в корзину</a>
+        </div>
+      </section>
+    
+      <script>
+        const products = [
+          { name: 'ВЯЛЕНАЯ БАРАНИНА', title: '1 КГ', price: 64.90, img: 'images/image-vl-br.png'},
+          { name: 'ГРУДИНКА', title: '1 КГ', price: 24.75, img: 'images/image-grud.png' },
+          { name: 'COWBOY STEAK', title: '1 КГ', price: 10.89, img: 'images/image-st-cw.png' },
+          { name: 'СЫРНИКИ', title: '1 КГ', price: 19.25, img: 'images/image-sirn.png' },
+          { name: 'ФАРШ', title: '1 КГ', price: 38.50, img: 'images/image-frs.png' },
+        ];
+    
+        const catalog = document.getElementById('catalog');
+    
+        function addToCart(name, price, image) {
+          const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+          cart.push({ name, price, image });
+          localStorage.setItem('cart', JSON.stringify(cart));
+          alert(`${name} добавлен в корзину`);
+        }
+    
+        function renderCatalog() {
+            products.forEach(product => {
+                const productEl = document.createElement('div');
+                productEl.className = 'product';
+                productEl.innerHTML = `
+                <div class="product-title">${product.name}</div>
+                <img src="${product.img}" alt="${product.name}" />
+                <div class="product-info">
+                    <p class="product-weight">${product.title}</p>
+                    <p class="product-price">${product.price.toFixed(2)} BYN</p>
+                    <button class="btn-add-vb" onclick='addToCart("${product.name}", ${product.price}, "${product.img}")'>В КОРЗИНУ</button>
+                </div>
+                `;
+                catalog.appendChild(productEl);
+            });
+        }
+        renderCatalog();
+      </script>
+    <footer>
+        <div class="footer-logo">FARM CRAFT<br>MARKET</div>
+        <div class="footer-contacts">
+          <p class="logo-con">КОНТАКТЫ</p>
+          <p>
+            АДРЕС:
+            <a href="https://www.google.com/maps?q=Республика+Беларусь,+Минская+обл.,+Минский+р-н,+а.г.+Хатежино,+ул.+Центральная,+18Б/1,+пом.+48"
+              target="_blank" rel="noopener noreferrer" class="con-text">
+              РЕСПУБЛИКА БЕЛАРУСЬ, МИНСКАЯ ОБЛ., МИНСКИЙ Р-Н, А.Г. ХАТЕЖИНО, УЛ. ЦЕНТРАЛЬНАЯ, 18Б/1, ПОМ. 48
+            </a>
+          </p>
+          <p>СВИДЕТЕЛЬСТВО О ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ № 692149333 ОТ 22.10.2019 ВЫДАНО МИНСКИМ РАЙИСПОЛКОМОМ.
+            РЕГИСТРАЦИОННЫЙ НОМЕР В ТОРГОВОМ РЕЕСТРЕ РЕСПУБЛИКИ БЕЛАРУСЬ: 465775. ДАТА ВНЕСЕНИЯ: 16 НОЯБРЯ 2019.</p>
+          <p>РЕЖИМ РАБОТЫ: ПН–ПТ С 9:00 ДО 18:00</p>
+          <p>
+            ТЕЛЕФОН:
+            <a href="tel:+79001234567" class="con-text">+375 29 680 44 18</a>
+          </p>
+          <p>EMAIL: <a href="mailto:farmcraft@example.com" class="con-text">CRA.MARKET@YANDEX.BY</a></p>
+          <div class="theme-toggle-wrapper">
+            <button onclick="toggleTheme()" class="theme-toggle">🌙</button>
+          </div>
+        </div>
+      </footer>
+    <script src="./main.js"></script>
+</body>
+</html>

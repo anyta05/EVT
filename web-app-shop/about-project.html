@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/about-project.css">
+    <title>Farm Craft Market</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="./index.html">ГЛАВНАЯ</a></li>
+                <li><a href="#">О ПРОЕКТЕ</a></li>
+            </ul>
+            <div class="burger-menu" onclick="toggleMenu()">☰</div>
+        </nav>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="slide"><img src="./images/image-header.png" alt="Фон 1"></div>
+                <div class="slide"><img src="./images/img-2.jpg" alt="Фон 2"></div>
+                <div class="slide"><img src="./images/img-3.jpg" alt="Фон 3"></div>
+            </div>
+            <div class="overlay">
+                <h1 class="logo-text">FARM CRAFT<br>MARKET</h1>
+                <p class="description-text-logo">ДЕРЕВЕНСКИЕ НАТУРАЛЬНЫЕ ПРОДУКТЫ</p>
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </header>
+    <section class="news-section">
+        <div class="news-container">
+            <div class="news-item-about-pr">
+                <p class="about-prj-text-con-1">О ПРОЕКТЕ</p>
+                <p class="about-prj-text-con-2">ДЕЛО, КОТОРЫМ МЫ ЗАНИМАЕМСЯ, — НОВОЕ И СЛОЖНОЕ, НО СТОЛЬ НЕОБХОДИМОЕ В
+                    НЫНЕШНЕЕ ВРЕМЯ. НАДЕЕМСЯ, ЧТО ВМЕСТЕ МЫ БУДЕМ РАЗВИВАТЬ ДЕРЕВНЮ XXI ВЕКА, ЧТОБЫ У КАЖДОГО БЫЛА
+                    ВОЗМОЖНОСТЬ ИМЕТЬ НА СВОЁМ СТОЛЕ ЗДОРОВЫЕ</p>
+                <div class="about-prj-text-con-3">
+                    <span>ДЕРЕВЕНСКИЕ НАТУРАЛЬНЫЕ ПРОДУКТЫ</span>
+                </div>
+            </div>
+            <div class="news-item main-news">
+                <div class="news-image">
+                    <img src="./images/image-about-p-1.png" alt="Органическая продукция">
+                </div>
+                <div class="news-text">
+                    <p class="news-description">
+                        ДОЛГАЯ И СЧАСТЛИВАЯ ЖИЗНЬ БЕЗ БОЛЕЗНЕЙ, В ЗДРАВОМ УМЕ — ЖЕЛАНИЕ КАЖДОГО ЧЕЛОВЕКА. НО ПЛОХАЯ
+                        ЭКОЛОГИЯ, СТРЕСС, НЕПРАВИЛЬНЫЙ ОБРАЗ ЖИЗНИ, НЕКАЧЕСТВЕННАЯ ЕДА СНИЖАЮТ ВЕРОЯТНОСТЬ ТАКОЙ
+                        ПЕРСПЕКТИВЫ. КАК БЫТЬ? КОНЧЕНО ЖЕ, СТОИТ ИСКЛЮЧИТЬ ВСЕ НЕГАТИВНЫЕ ФАКТОРЫ, И ОСОБЕННОЕ ВНИМАНИЕ
+                        УДЕЛИТЬ ВЫБОРУ ПРОДУКТОВ ПИТАНИЯ. ВЕДЬ НАУЧНЫЕ ИССЛЕДОВАНИЯ ПОДТВЕРЖДАЮТ: ПИТАНИЕ ОКАЗЫВАЕТ
+                        СИЛЬНЕЙШЕЕ ВЛИЯНИЕ НА ПРОДОЛЖИТЕЛЬНОСТЬ И КАЧЕСТВО НАШЕЙ ЖИЗНИ. КАК УЗНАТЬ, ЧТО МЫ ЕДИМ? ГДЕ И
+                        КАК ПРОИЗВОДЯТСЯ ПРОДУКТЫ? ГДЕ И КАК ИХ КУПИТЬ? ПОУЧАСТВОВАТЬ В ПРОИЗВОДСТВЕ И ПОЛУЧИТЬ ЛУЧШИЕ
+                        ЦЕНЫ. ВОТ ЭТИ ЗАДАЧИ МЫ РЕШИМ ДЛЯ ВАС!!!
+                    </p>
+                </div>
+            </div>
+            <div class="news-item mid-news">
+                <p class="about-prj-text-con-4">
+                    ВМЕСТЕ МЫ ВНЕСЕМ ОГРОМНЫЙ ВКЛАД В РАЗВИТИЕ ДЕРЕВНИ В XXI ВЕКЕ
+                </p>
+            </div>
+            <div class="news-item final-news">
+                <div class="news-text">
+                    <p class="news-description">
+                        ПРИОБРЕТАЯ ПРОДУКТЫ В НАШЕМ СЕРВИСЕ ВЫ НА ПРЯМУЮ ВЛИЯЕТЕ НА РАЗВИТИЕ НЕ БОЛЬШИХ ХОЗЯЙСТВ КОТОРЫЕ
+                        СТРЕМЯТСЯ ПРОИЗВОДИТЬ ПРОДУКТЫ ИМЕННО ДЛЯ ВАС, ПРИ ЧЕМ СТАРЫМ ДЕДОВСКИМ СПОСОБОМ, В СОВРЕМЕННОМ
+                        МИРЕ ЭТО НАЗЫВАЕТСЯ ЭКСТЕНСИВНОЕ СЕЛЬСКОЕ ХОЗЯЙСТВО.
+                    </p>
+                </div>
+                <div class="news-image">
+                    <img src="./images/image-about-p-2.png" alt="Деревенские продукты">
+                </div>
+            </div>
+            <div class="news-item-about-pr">
+                <div class="about-prj-text-con-5">
+                    <span>ОТДЫХ В ДЕРЕВНЕ</span>
+                </div>
+                <p class="about-prj-text-con-6">
+                    ВЫ СМОЖЕТЕ НЕ ТОЛЬКО ПРИОБРЕСТИ ПРОДУКТЫ ПИТАНИЯ, А ПОЛНОСТЬЮ ПОГРУЗИТЬСЯ В ИХ ПРОИЗВОДСТВА ПРЯМО НА
+                    ПОДВОРЬЕ ПРОИЗВОДИТЕЛЯ. НА ФЕРМЕ ВЫ МОЖЕТЕ ПРОВЕСТИ ОТ НЕСКОЛЬКИХ ЧАСОВ ДО НЕСКОЛЬКИХ НЕДЕЛЬ.
+                    ОТДЫХАЯ И ЗАНИМАЯСЬ ТЕМ ДЕЛОМ КОТОРОЕ ВАМ ИНТЕРЕСНО. В ВАШЕМ РАСПОРЯЖЕНИИ БУДЕТ ПИТАНИЕ, ДОМ, БАНЯ С
+                    ВЕНИКАМИ, ЛОДКА, МОТОР К ЛОДКЕ, СНАСТИ ДЛЯ РЫБНОЙ ЛОВЛИ, ВЕЛОСИПЕДЫ, КВАДРОЦИКЛ, РЕСТОРАН ВЫСОКОЙ
+                    ДЕРЕВЕНСКОЙ КУХНИ С ГАЗОВЫМ АМЕРИКАНСКИМ ГРИЛЕМ, А ГЛАВНОЕ МНОГО НЕЗАБЫВАЕМЫХ ЭМОЦИЙ
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-logo">FARM CRAFT<br>MARKET</div>
+        <div class="footer-contacts">
+          <p class="logo-con">КОНТАКТЫ</p>
+          <p>
+            АДРЕС:
+            <a href="https://www.google.com/maps?q=Республика+Беларусь,+Минская+обл.,+Минский+р-н,+а.г.+Хатежино,+ул.+Центральная,+18Б/1,+пом.+48"
+              target="_blank" rel="noopener noreferrer" class="con-text">
+              РЕСПУБЛИКА БЕЛАРУСЬ, МИНСКАЯ ОБЛ., МИНСКИЙ Р-Н, А.Г. ХАТЕЖИНО, УЛ. ЦЕНТРАЛЬНАЯ, 18Б/1, ПОМ. 48
+            </a>
+          </p>
+          <p>СВИДЕТЕЛЬСТВО О ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ № 692149333 ОТ 22.10.2019 ВЫДАНО МИНСКИМ РАЙИСПОЛКОМОМ.
+            РЕГИСТРАЦИОННЫЙ НОМЕР В ТОРГОВОМ РЕЕСТРЕ РЕСПУБЛИКИ БЕЛАРУСЬ: 465775. ДАТА ВНЕСЕНИЯ: 16 НОЯБРЯ 2019.</p>
+          <p>РЕЖИМ РАБОТЫ: ПН–ПТ С 9:00 ДО 18:00</p>
+          <p>
+            ТЕЛЕФОН:
+            <a href="tel:+79001234567" class="con-text">+375 29 680 44 18</a>
+          </p>
+          <p>EMAIL: <a href="mailto:farmcraft@example.com" class="con-text">CRA.MARKET@YANDEX.BY</a></p>
+          <div class="theme-toggle-wrapper">
+            <button onclick="toggleTheme()" class="theme-toggle">🌙</button>
+          </div>
+        </div>
+      </footer>
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Farm Craft Market</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#">ГЛАВНАЯ</a></li> 
+        <li><a href="./products.html">ПРОДУКТЫ</a></li>
+        <li><a href="./about-project.html">О ПРОЕКТЕ</a></li>
+        <li><a href="#how-to-order-id">ИНСТРУКЦИЯ</a></li>
+        <li><a href="./basket.html">КОРЗИНА</a></li>
+        <li><a href="#footer-id">КОНТАКТЫ</a></li>
+      </ul>
+      <div class="burger-menu" onclick="toggleMenu()">☰</div>
+    </nav>
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="slide"><img src="./images/image-header.png" alt="Фон 1"></div>
+        <div class="slide"><img src="./images/img-2.jpg" alt="Фон 2"></div>
+        <div class="slide"><img src="./images/img-3.jpg" alt="Фон 3"></div>
+      </div>
+      <div class="overlay">
+        <h1 class="logo-text">FARM CRAFT<br>MARKET</h1>
+        <a href="#news-text-id" class="a-logo-text-ab" style="text-decoration: none;"><p class="description-text-logo">ДЕРЕВЕНСКИЕ НАТУРАЛЬНЫЕ ПРОДУКТЫ</p></a>
+      </div>
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+  </header>
+  <section class="news-section">
+    <div class="news-container">
+      <div class="news-item main-news">
+        <div class="news-text">
+          <h2 class="news-title">ВАЖНАЯ<br>НОВОСТЬ</h2>
+          <p class="news-description highlight">
+            В НАШЕМ КАТАЛОГЕ ВЫ ВСТРЕТИТЕ ПРОДУКТЫ С МАРКИРОВКОЙ. ДАННЫЙ ЗНАК ОЗНАЧАЕТ, ЧТО ПРОДУКТ ИМЕЕТ СЕРТИФИКАТ
+            СООТВЕТСТВИЯ НА ОРГАНИЧЕСКУЮ ПРОДУКЦИЮ
+          </p>
+        </div>
+        <div class="news-image">
+          <img src="./images/image-organic.png" alt="Органическая продукция">
+        </div>
+      </div>
+      <div class="news-item mid-news">
+        <p class="news-description large">
+          "ХУТОР ЁДИШКИ" - СЕМЕЙНАЯ ОРГАНИЧЕСКАЯ ФЕРМА, ЕДИНСТВЕННАЯ В РЕСПУБЛИКЕ БЕЛАРУСЬ ПОДТВЕРДИЛА КАЧЕСТВО СВОЕЙ
+          ПРОДУКЦИИ В НАЦИОНАЛЬНОЙ СИСТЕМЕ СЕРТИФИКАЦИИ
+        </p>
+      </div>
+      <div class="news-item final-news">
+        <div class="news-image">
+          <img src="./images/image-third-con.png" alt="Деревенские продукты">
+        </div>
+        <div id="news-text-id" class="news-text">
+          <p class="news-title small">ДЕРЕВЕНСКИЕ НАТУРАЛЬНЫЕ<br>ПРОДУКТЫ</p>
+          <p class="news-description">
+            ЭТО ПРОДУКТЫ, ПРОИЗВЕДЕННЫЕ СЕЛЬСКИМ ЖИТЕЛЕМ В ЗАМКНУТОМ ЦИКЛЕ БЕЗ ПРИМЕНЕНИЯ ВСПОМОГАТЕЛЬНЫХ ВЕЩЕСТВ...
+            ПРОИЗВЕДЕННЫЕ СТАРЫМ ДЕДОВСКИМ СПОСОБОМ
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="products-section">
+    <p class="products-title">ПРОДУКТЫ, КОТОРЫЕ ВЫ<br>МОЖЕТЕ ПРИОБРЕСТИ</p>
+    <div class="products-grid">
+      <a href="./products.html" class="product-card">
+        <img src="./images/image-bar.png" alt="Баранина">
+        <div class="product-label">БАРАНИНА</div>
+      </a>
+      <a href="./products.html" class="product-card">
+        <img src="./images/image-koz.png" alt="Козлятина">
+        <div class="product-label">КОЗЛЯТИНА</div>
+      </a>
+      <a href="./products.html" class="product-card">
+        <img src="./images/image-kor.png" alt="Телятина">
+        <div class="product-label">ТЕЛЯТИНА</div>
+      </a>
+      <a href="./products.html" class="product-card">
+        <img src="./images/image-st.png" alt="Стейки">
+        <div class="product-label">СТЕЙКИ</div>
+      </a>
+      <a href="./products.html" class="product-card">
+        <img src="./images/image-krol.png" alt="Кролики">
+        <div class="product-label">КРОЛИКИ</div>
+      </a>
+      <a href="./products.html" class="product-card">
+        <img src="./images/image-vp.png" alt="Выпечка">
+        <div class="product-label">ВЫПЕЧКА</div>
+      </a>
+    </div>
+  </section>
+  <section class="about-section">
+    <div class="about-block">
+      <img src="./images/image-barani-std.png" alt="Овцы" class="about-img">
+      <div class="about-text-box">
+        <h2>О ПРОДУКТАХ И<br>ПРОЕКТЕ</h2>
+        <p>
+          НАШИ ПРОДУКТЫ ИЗГОТОВЛЕНЫ КРАФТОВЫМ СПОСОБОМ В НЕБОЛЬШИХ<br>
+          ОТКРЫТЫХ ХОЗЯЙСТВАХ И ПРОИЗВОДСТВАХ,<br>
+          НА ПРИМЕРЕ ЛПХ СЕМЬЯБАРОМОВЫХ<br><br>
+
+          "ХУТОР ЁДИШКИ",<br><br>
+
+          КОТОРОЕ ВЫ СМОЖЕТЕ ПОСЕТИТЬ В ЛЮБОЙ МОМЕНТ, ПОНЯВ ТОНКОСТИ<br>
+          ПРОИЗВОДСТВА ОРГАНИЧЕСКИХ ПРОДУКТОВ<br>
+          ПИТАНИЯ И ИХ ОТЛИЧИЕ НЕ ТОЛЬКО<br>
+          ПО СТОИМОСТИ.<br><br>
+
+          ПРОЕКТ НАПРАВЛЕН НА СТИМУЛИРОВАНИЕ<br>
+          РАЗВИТИЯ СЕЛЬСКОЙ МЕСТНОСТИ,<br>
+          СНИЖЕНИЕ НАГРУЗКИ НА ЭКОЛОГИЮ<br>
+          ЗА СЧЕТ ОРГАНИЧЕСКИХ ПРИНЦИПОВ<br>
+          ВЕДЕНИЯ ХОЗЯЙСТВА И ОБЕСПЕЧЕНИЕ<br>
+          ГОРОДСКИХ ЖИТЕЛЕЙ ДЕЙСТВИТЕЛЬНО<br>
+          ЗДОРОВЫМИ ПРОДУКТАМИ ПИТАНИЯ.<br><br>
+
+          НАША ДЕЯТЕЛЬНОСТЬ НАПРАВЛЕНА<br>
+          НЕ ТОЛЬКО НА РАСШИРЕНИЕ АССОРТИМЕНТА<br>
+          ДЛЯ ВАС, НО И ПРИВЛЕЧЕНИЕ НОВЫХ<br>
+          ПРОИЗВОДИТЕЛЕЙ РАЗЛИЧНЫХ НАПРАВЛЕНИЙ<br>
+          КОТОРЫЕ БУДУТ ОТКРЫТЫ ДЛЯ ВАС И<br>
+          ВАШИХ СЕМЕЙ.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="how-to-order-id" class="how-to-order">
+    <h2 class="section-title">КАК ПОЛУЧИТЬ ДЕРЕВЕНСКИЕ <br> НАТУРАЛЬНЫЕ ПРОДУКТЫ?</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">01</div>
+        <h3>ОФОРМИТЬ ЗАЯВКУ</h3>
+        <p>ВЫ МОЖЕТЕ ВЫПОЛНИТЬ ЗАЯВКУ ЛЮБЫМ УДОБНЫМ ДЛЯ ВАС СПОСОБОМ ЧЕРЕЗ САЙТ, ДИРЕКТ INSTAGRAM, TELEGRAM, ЛИБО ПО
+          ТЕЛЕФОНУ (В ССЫЛКЕ "КОНТАКТЫ"). В ЗАЯВКЕ ВЫ МОЖЕТЕ УКАЗАТЬ ВАШИ ИНДИВИДУАЛЬНЫЕ ТРЕБОВАНИЯ ИЛИ ЖЕЛАНИЯ.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">02</div>
+        <h3>ОБРАБОТАТЬ ВАШУ ЗАЯВКУ</h3>
+        <p>НАМ НЕОБХОДИМО НЕМНОГО ВРЕМЕНИ ДЛЯ СБОРА ИНФОРМАЦИИ ПО ЗАЯВКЕ. НЕОБХОДИМО УЧИТЫВАТЬ, ЧТО МЫ НЕ СУПЕРМАРКЕТ, А
+          НАШ ПРОДУКТ ПРОИЗВОДИТСЯ СИЛОЙ ОДНОЙ СЕМЬИ, НО ВСЕГДА НАЙДЕМ ЛУЧШЕЕ РЕШЕНИЕ ДЛЯ ВАС И ВАШЕЙ ПОТРЕБНОСТИ.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">03</div>
+        <h3>СОГЛАСОВАНИЕ</h3>
+        <p>МЫ СВЯЖЕМСЯ С ВАМИ КАК СОБЕРЕМ ВСЮ НЕОБХОДИМУЮ ИНФОРМАЦИЮ. МЫ ОБСУДИМ ДЕТАЛИ ВАШЕГО ЗАКАЗА И ВРЕМЕНИ ДОСТАВКИ
+          В УДОБНОЕ ДЛЯ ВАС МЕСТО. В СЛУЧАЕ ЕСЛИ ВАМ АКТУАЛЬНО ВРЕМЯ ДЛЯ СВЯЗИ, УКАЖИТЕ ЭТО В ЗАЯВКЕ В СВОБОДНОМ ПОЛЕ.
+        </p>
+      </div>
+      <div class="step">
+        <h3>ОПЛАТА</h3>
+        <div class="step-number">04</div>
+        <p>ОПЛАТА БУДЕТ ПРОИЗВОДИТЬСЯ ИСКЛЮЧИТЕЛЬНО ОНЛАЙН И НЕПОСРЕДСТВЕННО САМОМУ ХОЗЯЙСТВУ, КОТОРОЕ ПРОИЗВЕЛО
+          ПРОДУКТЫ ДЛЯ ВАС. МЫ ВАМ ВЫШЛЕМ ССЫЛКУ НА ОПЛАТУ С QR-КОДОМ И ЛИСТЕ ДОСТАВКИ ГДЕ БУДУТ УКАЗАНЫ ТОЧНЫЕ МАССЫ
+          ПРОДУКТОВ КОТОРЫЕ ВЫ ВЫБРАЛИ. ОПЛАТА БУДЕТ ПРОИЗВОДИТЬСЯ В СЕРВИСЕ "E-POS".</p>
+      </div>
+      <div class="step">
+        <h3>ДОСТАВКА</h3>
+        <div class="step-number">05</div>
+        <p>МЫ ПРИВЕЗЕМ ПРОДУКТЫ В ДОГОВОРЕННОЕ ВРЕМЯ И МЕСТО. А ВАМ ОСТАНЕТСЯ ТОЛЬКО ПРИГОТОВИТЬ И ПОЛУЧАТЬ НАСЛАЖДЕНИЕ
+          ОТ ДЕЙСТВИТЕЛЬНО НАСТОЯЩИХ ДЕРЕВЕНСКИХ НАТУРАЛЬНЫХ ПРОДУКТОВ.</p>
+      </div>
+    </div>
+  </section>
+  <footer id="footer-id">
+    <div class="footer-logo">FARM CRAFT<br>MARKET</div>
+    <div class="footer-contacts">
+      <p class="logo-con">КОНТАКТЫ</p>
+      <p>
+        АДРЕС:
+        <a href="https://www.google.com/maps?q=Республика+Беларусь,+Минская+обл.,+Минский+р-н,+а.г.+Хатежино,+ул.+Центральная,+18Б/1,+пом.+48"
+          target="_blank" rel="noopener noreferrer" class="con-text"> 
+          РЕСПУБЛИКА БЕЛАРУСЬ, МИНСКАЯ ОБЛ., МИНСКИЙ Р-Н, А.Г. ХАТЕЖИНО, УЛ. ЦЕНТРАЛЬНАЯ, 18Б/1, ПОМ. 48
+        </a>
+      </p>
+      <p>СВИДЕТЕЛЬСТВО О ГОСУДАРСТВЕННОЙ РЕГИСТРАЦИИ № 692149333 ОТ 22.10.2019 ВЫДАНО МИНСКИМ РАЙИСПОЛКОМОМ.
+        РЕГИСТРАЦИОННЫЙ НОМЕР В ТОРГОВОМ РЕЕСТРЕ РЕСПУБЛИКИ БЕЛАРУСЬ: 465775. ДАТА ВНЕСЕНИЯ: 16 НОЯБРЯ 2019.</p>
+      <p>РЕЖИМ РАБОТЫ: ПН–ПТ С 9:00 ДО 18:00</p>
+      <p>
+        ТЕЛЕФОН:
+        <a href="tel:+79001234567" class="con-text">+375 29 680 44 18</a>
+      </p>
+      <p>EMAIL: <a href="mailto:farmcraft@example.com" class="con-text">CRA.MARKET@YANDEX.BY</a></p>
+      <div class="theme-toggle-wrapper">
+        <button onclick="toggleTheme()" class="theme-toggle">🌙</button>
+      </div>
+    </div>
+  </footer>
+  <script src="./main.js"></script>
+</body>
+</html>

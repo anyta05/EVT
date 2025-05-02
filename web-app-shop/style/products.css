@@ -1,0 +1,139 @@
+.con-product {
+    background-color: #6f7265;
+}
+
+.text-product-mn {
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+    letter-spacing: 6px;
+    padding: 60px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.a-product:hover {
+    color: white;
+  }
+
+.btn-add-vb:hover {
+    background-color:yellowgreen;;
+} 
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.product {
+    width: 30%;
+    background: #44473d;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-title {
+    font-size: 22px;
+    font-weight: inherit;
+    margin-bottom: 20px;
+    letter-spacing: 6px;
+    color: #fcd67f;
+}
+
+
+
+.product img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    margin-top: 10px;
+}
+
+.product-weight {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.product-price {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.product p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.product button {
+    margin-top: 10px;
+    background-color: #fcd67f;
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.a-product {
+   display: block;
+    margin-top: 50px;
+    color: #fcd67f;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+    .product {
+        width: 45%;
+    }
+
+    .text-product-mn {
+        font-size: 24px;
+        padding: 40px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .product {
+        width: 100%;
+    }
+
+    .text-product-mn {
+        font-size: 20px;
+        padding: 30px 20px;
+        letter-spacing: 3px;
+    }
+
+    .product-title,
+    .product h3 {
+        font-size: 18px;
+    }
+
+    .product-price,
+    .product-weight,
+    .product p {
+        font-size: 16px;
+    }
+
+    .product button {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .a-product {
+        font-size: 16px;
+    }
+}
